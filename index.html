@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="e.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+</head>
+<body>
+    <div class="container">
+        <article>
+            <p>Ingrese su nombre</p>
+            <input type="text" id="Nombre">
+            <p>Ingrese su matricula</p>
+            <input type="text" id="Matricula">
+            <p>Ingrese sus calificaciones,separadas por una coma o por un espacio</p>
+            <input type="text" id="Califonas">
+            <button onclick="agregar()">Enviar</button>
+            <div id="personas">
+                <ul id="mostrar">
+
+                </ul>
+            </div>
+            <div class="container">
+                <button  onclick="showP()">
+                    Ver Personas
+                </button>
+                <p id="personasp"></p>
+            </div>
+            <div class="profesor">
+                <input type="text" id="alumno" placeholder="Ingrese la matricula del alumno">
+                <button onclick="profesor()">Enviar</button>
+                <p id="error"></p>
+                <button onclick="mostrarA()">Ver alumnos Profe Juan carlos</button>
+                <ul id="alumnosM"></ul>
+            </div>
+        </article>
+    </div>
+</body>
+</html>
